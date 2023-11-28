@@ -5,6 +5,8 @@
 - This project is the to-do application I made with made with ReactJs 
 In this to-do app, you can add new todos, edit them or delete them.
 
+#https://snazzy-elf-ab66b9.netlify.app/ (HOST LINK)
+
 ## What's new in this?
 
 - Search todo feature added (Now, you can input keywords to find todo which you want)
