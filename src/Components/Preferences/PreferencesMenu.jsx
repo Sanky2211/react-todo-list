@@ -4,12 +4,14 @@ import CheckboxPreference from './PreferenceTypes/CheckboxPreference.jsx';
 
 export default function PreferencesMenu({
   preferences,
+  handleTheme,
   handleHideLastDeletedTodoNotifications,
   handleDate,
   handleSortType,
   handleShowTodos,
 }) {
   const {
+    theme,
     sortType,
     showTodos,
     hideLastDeletedTodoNotifications,
@@ -80,6 +82,27 @@ export default function PreferencesMenu({
           onClick={(event) => handleDate(event, 'full')}
         >
           Full
+        </RadioPreference>
+      </Preference>
+      <p className='dark:text-gray-400 text-sm'>Theme:</p>
+      <Preference>
+        <RadioPreference
+          selected={theme === 'os'}
+          onClick={(event) => handleTheme(event, 'os')}
+        >
+          System
+        </RadioPreference>
+        <RadioPreference
+          selected={theme === 'dark'}
+          onClick={(event) => handleTheme(event, 'dark')}
+        >
+          Dark
+        </RadioPreference>
+        <RadioPreference
+          selected={theme === 'light'}
+          onClick={(event) => handleTheme(event, 'light')}
+        >
+          Light
         </RadioPreference>
       </Preference>
       <Preference>
