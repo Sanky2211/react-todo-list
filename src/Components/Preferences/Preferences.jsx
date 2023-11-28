@@ -2,6 +2,7 @@ import PreferencesMenu from './PreferencesMenu.jsx';
 
 export default function Preferences({
   preferences,
+  handleTheme,
   user,
   handleHideLastDeletedTodoNotifications,
   handleDate,
@@ -13,6 +14,7 @@ export default function Preferences({
       <PreferencesMenu
         preferences={preferences}
         user={user}
+        handleTheme={handleTheme}
         handleHideLastDeletedTodoNotifications={
           handleHideLastDeletedTodoNotifications
         }
