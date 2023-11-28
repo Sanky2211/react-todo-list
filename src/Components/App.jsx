@@ -103,6 +103,18 @@ export default function App() {
     }
   }, [data]);
 
+  const handleTheme = (event, theme) => {
+    event.preventDefault();
+
+    setData((prev) => ({
+      ...prev,
+      preferences: {
+        ...prev.preferences,
+        theme,
+      },
+    }));
+  };
+
   function handleHideLastDeletedTodoNotifications(
     event,
     hideLastDeletedTodoNotifications,
@@ -260,7 +272,7 @@ export default function App() {
         <Preferences
           preferences={data.preferences}
           user={data.user}
-          
+          handleTheme={handleTheme}
           handleHideLastDeletedTodoNotifications={
             handleHideLastDeletedTodoNotifications
           }
