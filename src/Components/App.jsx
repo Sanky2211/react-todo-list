@@ -59,7 +59,7 @@ const STARTER_DATA = {
   // ],
   todos: [],
   preferences: {
-    theme: 'os' /* light, dark, os */,
+    theme: 'dark' /* light, dark, os */,
     sortType: 'date' /* date, name */,
     showTodos: 'all' /* all, active, completed */,
     sortDesc: false,
